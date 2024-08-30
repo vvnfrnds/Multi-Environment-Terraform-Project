@@ -1,7 +1,7 @@
 #DEV INFRA
 module "dev-demo-app" {
   source = "./modules/demo-app/"
-  env_name = "dev"
+  env_name = "devvvnfern"
   instance_type = "t2.micro"
   ami_id = "ami-0bb84b8ffd87024d8"
   instance_name = "demo-instance"
@@ -12,7 +12,7 @@ module "dev-demo-app" {
 #QA INFRA
 module "qa-demo-app" {
   source = "./modules/demo-app/"
-  env_name = "qa"
+  env_name = "qavvnfern"
   instance_type = "t2.small"
   ami_id = "ami-0bb84b8ffd87024d8"
   instance_name = "demo-instance"
@@ -23,7 +23,7 @@ module "qa-demo-app" {
 #PROD INFRA
 module "prod-demo-app" {
   source = "./modules/demo-app/"
-  env_name = "prod"
+  env_name = "prodvvnfern"
   instance_type = "t2.medium"
   ami_id = "ami-0fe630eb857a6ec83"
   instance_name = "demo-instance"
